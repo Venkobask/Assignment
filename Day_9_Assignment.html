@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day 9 Assignment</title>
+</head>
+<body>
+  <br><br>
+  <div id="myDiv" style="height: 100px;">This is my div</div>
+
+  <label for="color">Color:</label>
+  <select id="color">
+    <option value="black">Black</option>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+  </select>
+
+  <label for="backgroundColor">Background color:</label>
+  <select id="backgroundColor">
+    <option value="white">White</option>
+    <option value="yellow">Yellow</option>
+    <option value="pink">Pink</option>
+    <option value="cyan">Cyan</option>
+  </select>
+
+  <label for="padding">Padding:</label>
+  <select id="padding">
+    <option value="0px">0px</option>
+    <option value="10px">10px</option>
+    <option value="20px">20px</option>
+    <option value="30px">30px</option>
+  </select>
+
+  <label for="fontSize">Font size:</label>
+  <select id="fontSize">
+    <option value="12px">12px</option>
+    <option value="16px">16px</option>
+    <option value="20px">20px</option>
+    <option value="24px">24px</option>
+  </select>
+
+  <label for="fontWeight">Font weight:</label>
+  <select id="fontWeight">
+    <option value="normal">Normal</option>
+    <option value="bold">Bold</option>
+    <option value="italic">Italic</option>
+    <option value="underline">Underline</option>
+  </select>
+
+  <script>
+
+    var myDiv = document.getElementById("myDiv");
+
+
+    var colorSelect = document.getElementById("color");
+    var backgroundColorSelect = document.getElementById("backgroundColor");
+    var paddingSelect = document.getElementById("padding");
+    var fontSizeSelect = document.getElementById("fontSize");
+    var fontWeightSelect = document.getElementById("fontWeight");
+
+
+    colorSelect.addEventListener("change", function() {
+
+      var color = colorSelect.value;
+
+      myDiv.style.color = color;
+    });
+
+    backgroundColorSelect.addEventListener("change", function() {
+
+      var backgroundColor = backgroundColorSelect.value;
+
+
+      myDiv.style.backgroundColor = backgroundColor;
+    });
+
+    paddingSelect.addEventListener("change", function() {
+
+      var padding = paddingSelect.value;
+
+
+      myDiv.style.padding = padding;
+    });
+
+    fontSizeSelect.addEventListener("change", function() {
+
+      var fontSize = fontSizeSelect.value;
+
+
+      myDiv.style.fontSize = fontSize;
+    });
+
+    fontWeightSelect.addEventListener("change", function() {
+      var fontWeight = fontWeightSelect.value;
+
+      myDiv.style.fontWeight = fontWeight;
+    });
+  </script>
+</body>
+</html>
